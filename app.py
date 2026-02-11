@@ -34,7 +34,7 @@ model = load_model()
 # --------------------------------------------------
 # Header
 # --------------------------------------------------
-st.image("assets/header.png", use_column_width=True)
+st.image("assets/Header.png", use_column_width=True)
 st.title("Malaysia Crop Production Analytics")
 st.markdown(
     "Exploratory Analysis • State Clustering • Machine Learning Prediction"
