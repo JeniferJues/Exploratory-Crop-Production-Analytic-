@@ -122,7 +122,7 @@ elif page == "🧠 Cluster Insights":
     fig = px.scatter(
         cluster_df,
         x="avg_production",
-        y="growth_rate",
+        y="avg_growth_rate",
         color="cluster_label",
         size="variability",
         hover_name="state",
