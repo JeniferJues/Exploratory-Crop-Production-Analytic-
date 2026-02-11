@@ -119,31 +119,6 @@ elif page == "🧠 Cluster Insights":
 
     st.header("State Clustering by Agricultural Profile")
 
-    summary_df = (
-    df.groupby("state")
-    .agg(
-        avg_production=("production", "mean"),
-        total_production=("production", "sum"),
-        variability=("production", "std")
-    )
-    .reset_index()
-)
-
-    growth_df = (
-    df.sort_values("year")
-      .groupby("state")["production"]
-      .pct_change()
-)
-
-    df["growth_rate"] = growth_df
-
-    cluster_df = summary_df.merge(
-    cluster_df[["state", "cluster"]],
-    on="state",
-    how="left"
-)
-
-
     fig = px.scatter(
         cluster_df,
         x="avg_production",
