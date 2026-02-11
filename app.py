@@ -120,20 +120,19 @@ elif page == "🧠 Cluster Insights":
     st.header("State Clustering by Agricultural Profile")
 
     fig = px.scatter(
-    cluster_df,
-    x="avg_production",
-    y="growth_rate",
-    color="cluster_label",
-    size="variability",
-    hover_name="state",
-    title="Clustered States by Production & Growth"
-)
+        cluster_df,
+        x="avg_production",
+        y="growth_rate",
+        color="cluster_label",
+        size="variability",
+        hover_name="state",
+        title="Clustered States by Production & Growth"
+    )
 
-# Apply log scale ONLY to axis display
-   fig.update_xaxes(type="log")
+    # Apply log scale ONLY to axis display
+    fig.update_xaxes(type="log")
 
-   st.plotly_chart(fig, use_container_width=True)
-
+    st.plotly_chart(fig, use_container_width=True)
 
     st.markdown("""
     ### Cluster Interpretation
