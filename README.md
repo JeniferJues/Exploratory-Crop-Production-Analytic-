@@ -1,12 +1,17 @@
-🔹 Project Overview (Top of GitHub README)
+###🔹 Project Overview 
 This project analyzes Malaysia’s crop production patterns across states and years using exploratory data analysis, machine learning, and interactive dashboards. The goal is to uncover regional crop specialization, production trends, and risk patterns, and translate these insights into decision-ready visuals.
+
 Tools & Tech
 •	Python (Pandas, NumPy, Scikit-learn, Plotly)
+
 •	Power BI (Dashboard storytelling)
+
 •	Streamlit (Interactive deployment)
+
 •	GeoJSON (Malaysia state mapping)
+
 •	Data source: DOSM Open Data (Agriculture – Crop Production)
-___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+___________________________________________________________________________________________________________________________________________________________________________________________
 🔹 Data Preparation & EDA (Python)
 Exploratory data analysis was conducted in Python to understand distribution, trends, and regional variation.
 Key steps:
